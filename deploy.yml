@@ -7,5 +7,5 @@
   password: '6M71N93N'
   host: xifox.net
   port: 21
-  path: /public_html/dogosdelriolimay
-  local_path: website/
+  path: /public_html
+  local_path: dogosdelriolimay/
