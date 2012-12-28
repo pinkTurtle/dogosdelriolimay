@@ -43,9 +43,9 @@ error_reporting(E_ALL);
 // Database configuration
 
 $db_server   = 'localhost';
-$db_name     = 'dogos';
-$db_username = 'cerebro';
-$db_password = 'alfilasesino'; 
+$db_name     = 'xifox_dogos';
+$db_username = 'xifox_dogos';
+$db_password = 'alfil10asesino'; 
 
 // Connection charset should be the same as the dump file charset (utf8, latin1, cp1251, koi8r etc.)
 // See http://dev.mysql.com/doc/refman/5.0/en/charset-charsets.html for the full list
