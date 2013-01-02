@@ -1,0 +1,12 @@
+#!/bin/bash
+ftp -inv ftp.xifox.net<<FINFTP
+user faco@xifox.net juanfacu23001419
+binary
+mkdir .dbt
+cd .dbt
+lcd tools
+put bigdump.php
+lcd ../data
+put production.sql
+bye
+FINFTP
