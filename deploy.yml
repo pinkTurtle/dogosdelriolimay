@@ -1,11 +1,14 @@
 'settings':
-  ignore_if_same_revision: true
+  ignore_if_same_revision: true 
 '/':
   skip: false
   scheme: ftp
-  user: xifox@xifox.net 
-  password: '6M71N93N'
-  host: xifox.net
+  user: faco@xifox.net 
+  password: 'juanfacu23001419'
+  host: ftp.xifox.net
   port: 21
-  path: /public_html/dogosdelriolimay
+  path: /
   local_path: dogosdelriolimay/
+  overwrite_if_same_revision: true
+  debug_mode: true
+
