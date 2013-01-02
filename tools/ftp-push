@@ -8,5 +8,7 @@ lcd tools
 put bigdump.php
 lcd ../data
 put production.sql
+cd ..
+put wp-config.php
 bye
 FINFTP
