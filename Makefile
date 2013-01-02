@@ -1,19 +1,32 @@
 
+db-dump:
+	mysqldump -u root -palfilasesino --opt dogos > data/dump.sql
+
+db-update:
+	sed 's/localhost/xifox.net\/dogosdelriolimay/g' data/dump.sql > data/production.sql
+
+db-bigdump:
+	mkdir dogosdelriolimay/.dbt
+	chmod 777 dogosdelriolimay/.dbt
+	cp data/production.sql dogosdelriolimay/.dbt
+
 db:
-	sed 's/localhost/xifox.net\/dogosdelriolimay/' data/dogos.sql > data/production.sql
+	clear
+	make db-dump
+	make db-update
+	make db-bigdump
+	git add data/ -v
+	git add dogosdelriolimay/.dbt/ -v
+	git commit -m "ready to update dB"
 
 deploy:
-	clear
-	make host
-	mkdir dogosdelriolimay/.upgrade
-	cp tools/bigdump.php dogosdelriolimay/.upgrade/
-	cp data/production.sql dogosdelriolimay/.upgrade/
-	git add dogosdelriolimay/.upgrade
-	git commit -m "ready to deploy"
 	git-deploy
 
 clean:
-	git rm -rf dogosdelriolimay/.upgrade
-	git commit -m "clean .upgrade files"
+	git rm -rf dogosdelriolimay/.dbt
+	git commit -m "clean .dbt files"
 
 .PHONY: test
+
+
+
