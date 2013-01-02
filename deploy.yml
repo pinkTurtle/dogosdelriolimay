@@ -3,9 +3,9 @@
 '/':
   skip: false
   scheme: ftp
-  user: xifox@xifox.net 
-  password: '6M71N93N'
+  user: dogos@xifox.net
+  password: 'alfil10asesino'
   host: xifox.net
   port: 21
-  path: /public_html/dogosdelriolimay
+  path: /
   local_path: dogosdelriolimay/
