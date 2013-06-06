@@ -1,8 +1,0 @@
-#!/bin/bash
-ftp -inv ftp.xifox.net<<FINFTP
-user faco@xifox.net juanfacu23001419
-binary
-cd .dbt
-mdelete *.*
-bye
-FINFTP
