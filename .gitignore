@@ -1,3 +1,6 @@
-dogosdelriolimay/wp-config.php
+website/wp-config.php
 data/wpconfig.php
+tools
+deploy.yml
+data
 
