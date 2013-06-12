@@ -29,3 +29,11 @@
   margin-left: 0px;
 }
 
+#footer-copyright .owner {
+  height: 45px;
+  width: 100%;
+  background-image: url('img/1px-bandera.jpg');
+  line-height: 45px;
+  text-align: center;
+}
+
