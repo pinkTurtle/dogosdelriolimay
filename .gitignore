@@ -1,4 +1,5 @@
 website/wp-config.php
+website/.htaccess
 data/wpconfig.php
 tools
 deploy.yml

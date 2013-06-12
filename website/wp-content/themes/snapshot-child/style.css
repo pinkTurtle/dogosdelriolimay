@@ -12,20 +12,20 @@
 #post-loop .post-content h2 a {
   background-color: rgba(150,150,255,0.5);
   padding: 8px;
-  border-radius: 10px 5px ;
+  border-radius: 10px 3px;
   color: white;
 }
 
 #menu-main-menu > li > a:hover {
   background-color: rgba(150,150,255,0.5);
   padding: 8px;
-  border-radius: 10px 5px ;
+  border-radius: 10px 3px ;
 }
 
 #menu-main-menu > li > a {
   padding: 8px;
 }
 #menu-main-menu > li, #top-area .menu > ul > li {
-  margin-left: 5px;
+  margin-left: 0px;
 }
 
